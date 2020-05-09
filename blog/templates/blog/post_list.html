@@ -7,17 +7,21 @@
             <h1><a href="/">Blog of Alexandra Zakharova</a></h1>
         </div>
 
+    {% for post in posts %}
         <div>
             <p> published : today, 12:00</p>
             <h2><a href="">My post about contemporary art</a></h2>
             <p>In its most basic sense, the term contemporary art refers to art—namely, painting, sculpture, photography, installation, performance, and video art—produced today. Though seemingly simple, the details surrounding this definition are often a bit fuzzy, as different individuals’ interpretations of “today” may widely and wildly vary. Therefore, the exact starting point of the genre is still debated; however, many art historians consider the late 1960s or early 1970s (the end of modern art, or modernism) to be an adequate estimate.</p>
         </div>
+    {% endfor %}
 
+    {% for post in posts %}
         <div>
             <p>published : today, 15:00</p>
             <h2><a href="">My post about modern art</a></h2>
             <p>The birth of modernism and modern art can be traced to the Industrial Revolution. This period of rapid changes in manufacturing, transportation, and technology began around the mid-18th century and lasted through the 19th century, profoundly affecting the social, economic, and cultural conditions of life in Western Europe, North America, and eventually the world. New forms of transportation, including the railroad, the steam engine, and the subway, changed the way people lived, worked, and traveled, expanding their worldview and access to new ideas. As urban centers prospered, workers flocked to cities for industrial jobs and urban populations boomed.</p>
         </div>
-
+    {% endfor %}
+    
     </body>
 </html>
